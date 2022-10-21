@@ -154,3 +154,18 @@ jun = [
 
 console.log(jade);
 console.log(jun);
+
+// ---------------------------------- function & type -----------------------------------
+
+function add(a: number, b: number): number {
+  return a + b;
+}
+// 함수의 결과값의 타입을 지정할 수 있다.
+
+function printOutPut(value: any) {
+  console.log(value);
+  //   return undefined;
+}
+// printOutPut 함수의 결과값의 타입을 보면 void 라는걸 확인할 수 있다. 이유는 아무것도 반환하지 않기 때문이다.
+// void 는 함수에만 있는 특별한 결과값으로 null 혹은 undefined 랑 비슷하다. 특이점으로는 항상 함수와 결합하여 사용해야 한다는 것이다.
+// 만약 printOutPut 함수의 반환값을 받아야 한다면 타입을 undefined 로 지정해 주어야 한다.
